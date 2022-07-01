@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Product preview card component</title>
+  </head>
+  <body class="bg-Cream grid place-items-center min-h-screen px-4">
+    <div class="max-w-xl rounded-lg bg-white flex flex-col sm:flex-row">
+      <div class="overflow-hidden flex-1">
+        <img
+          class="rounded-t object-cover h-full sm:rounded-l-lg sm:rounded-r-none"
+          src="../images/image-product-mobile.jpg"
+          srcset="
+            ../images/image-product-desktop.jpg 1440w,
+            ../images/image-product-mobile.jpg   640w
+          "
+          alt="product"
+        />
+      </div>
+      <div class="p-7 flex flex-col justify-start flex-1">
+        <h3
+          class="uppercase tracking-[.25em] text-Dark-grayish-blue font-sans text-tiny"
+        >
+          Perfume
+        </h3>
+        <h2 class="font-serif font-bold text-3xl leading-8 mt-4">
+          Gabrielle Essence Eau De Parfum
+        </h2>
+        <p
+          class="mt-4 font-sans text-Dark-grayish-blue text-xs pr-4 font-medium sm:mt-8 sm:text-sm"
+        >
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="mt-8 flex items-center sm:mt-5">
+          <span class="font-serif text-Dark-cyan text-3xl">$149.99</span>
+          <span class="text-tiny text-Dark-grayish-blue ml-8 line-through"
+            >$169.99
+          </span>
+        </div>
+        <button
+          class="bg-Dark-cyan p-4 rounded-lg text-white mt-5 font-bold text-sm flex items-center justify-center gap-4"
+        >
+          <img src="../images/icon-cart.svg" alt="cart" />
+          Add to Cart
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
